@@ -8,6 +8,7 @@ class SAPTask:
         self.path = 'data/58735500.xlsx'
         self.book = pd.ExcelFile(self.path)
         self.firstTask()
+        self.secondTask()
     def cm_to_inch(self, cm):
         return cm/2.54
 
@@ -58,7 +59,9 @@ class SAPTask:
             labels = ['Бесплатно', 'Платно']
             self.plotpies(i,labels, sizes)
 
+    def secondTask(self):
 
+        pass
 if __name__ == "__main__":
     SAPTask = SAPTask()
 
